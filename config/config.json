@@ -1,0 +1,20 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "easy-contents-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/easyContents/EasyContentsWebPart.js",
+          "manifest": "./src/webparts/easyContents/EasyContentsWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "EasyContentsWebPartStrings": "lib/webparts/easyContents/loc/{locale}.js",
+    "ControlStrings": "node_modules/@pnp/spfx-controls-react/lib/loc/{locale}.js",
+    "PropertyControlStrings": "node_modules/@pnp/spfx-property-controls/lib/loc/{locale}.js"
+  }
+}
